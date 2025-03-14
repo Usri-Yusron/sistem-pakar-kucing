@@ -2,11 +2,12 @@
 
 import { motion } from "framer-motion"
 import { ArrowRight, CreditCard, LineChart, Lock, CheckCircle2 } from "lucide-react"
-import Link from "next/link"
+import Team from "./components/Team"
 import Button from "./components/Button"
 import Footer from "./components/Footer"
 
 export default function Home() {
+
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Hero Section */}
@@ -150,58 +151,18 @@ export default function Home() {
       </section>
 
       {/* Features Section */}
-      <section id="features" className="relative z-10 border-t border-white/10 bg-black py-24">
-        <div className="container px-4">
-          <div className="mb-16 text-center">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">¿Por Qué Elegirnos?</h2>
-            <p className="mt-4 text-gray-400">Experimenta la banca que funciona para ti</p>
+      <section id="team" className="relative z-10 border-t border-white/10 bg-black py-24">
+      <div className="text-center">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Our Team</h2>
+            <p className="mt-4 text-gray-400">Mereka yang telah bekerja di balik layar</p>
           </div>
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              viewport={{ once: true }}
-              className="group rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm transition-colors hover:border-cyan-400/50"
-            >
-              <CreditCard className="mb-4 h-12 w-12 text-cyan-400" />
-              <h3 className="mb-2 text-xl font-bold">Smart Cards</h3>
-              <p className="text-gray-400">
-                Tarjetas virtuales y físicas con controles avanzados y notificaciones en tiempo real.
-              </p>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              viewport={{ once: true }}
-              className="group rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm transition-colors hover:border-violet-400/50"
-            >
-              <LineChart className="mb-4 h-12 w-12 text-violet-400" />
-              <h3 className="mb-2 text-xl font-bold">Inversiones Inteligentes</h3>
-              <p className="text-gray-400">
-                Estrategias de inversión automatizadas adaptadas a tus objetivos financieros.
-              </p>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              viewport={{ once: true }}
-              className="group rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm transition-colors hover:border-cyan-400/50"
-            >
-              <Lock className="mb-4 h-12 w-12 text-cyan-400" />
-              <h3 className="mb-2 text-xl font-bold">Seguridad Bancaria</h3>
-              <p className="text-gray-400">
-                Seguridad de nivel empresarial con encriptación de extremo a extremo y autenticación biométrica.
-              </p>
-            </motion.div>
-          </div>
-        </div>
+      <Team />
       </section>
 
+
+
       {/* CTA Section */}
-      <section className="relative z-10 border-t border-white/10 bg-black py-24">
+      <section id="tech-stack" className="relative z-10 border-t border-white/10 bg-black py-24">
         <div className="container px-4">
           <div className="mx-auto max-w-3xl rounded-2xl border border-white/10 bg-gradient-to-r from-cyan-950/50 to-violet-950/50 p-8 text-center backdrop-blur-sm md:p-12 lg:p-16">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">¿Listo para Comenzar?</h2>

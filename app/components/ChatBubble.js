@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const ChatBubble = ({ text, isUser }) => {
   const [displayedText, setDisplayedText] = useState("");
-  const typingSpeed = 30; // Kecepatan mengetik (ms per karakter)
+  const typingSpeed = 80; // Kecepatan mengetik (ms per karakter)
 
   useEffect(() => {
     if (!text) return; // Jika text tidak ada, hentikan proses
@@ -42,7 +42,7 @@ const ChatBubble = ({ text, isUser }) => {
                     />
                 </div>
             </div>
-            <div className="chat-header">MeowMed</div>
+            <div className="chat-header text-white">MeowMed</div>
             <div className="chat-bubble">{displayedText}</div>
         </div>
     </motion.div>

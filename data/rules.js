@@ -1,13 +1,13 @@
 export const rules = {
     start: {
-      question: "Appakah kamu ingin mengetahui penyakit yang sedang dialami kucing kamu?",
+      question: "Haai saya adalah Sisku, Asisten kucing virtual yang siap membantu mengetahui penyakit kucing kamu, Yuk kasih tau aku tujuan kamu dengan pilih opsi dibawah ini!",
       options: [
-        { text: "Yaa", next: "Q1" },
-        { text: "Tiidak", next: "END_HEALTHY" },
+        { text: "Nyyari tahu penyakit yang dialami kucing kesayangan", next: "Q1" },
+        { text: "Maau ngobrol aja sama Sisku", next: "END_HEALTHY" },
       ],
     },
     Q1: {
-      question: "Appakah kucing kamu lebih agresif akhir-akhir ini?",
+      question: "Okke mari kita mendiagnosa, Apakah kucing kamu lebih agresif akhir-akhir ini?",
       options: [
         { text: "Iyya", next: "Q2" },
         { text: "Tiidak", next: "Q3" },
@@ -37,7 +37,7 @@ export const rules = {
       result: "Maau mati itu kucingnya, udah bosen hidup kucingnya.",
     },
     END_HEALTHY: {
-      result: "Nggapain kesini coba...",
+      result: "Yaahhh aku lagi males ngobrol, kita udahan ya. Bye!",
     },
   };
   

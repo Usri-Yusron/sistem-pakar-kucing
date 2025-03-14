@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 
 import ChatBubble from '../components/ChatBubble';
+import { BackgroundLines } from '../components/ui/background-lines';
 import { rules } from '@/data/rules';
 
 const Home = () => {
@@ -31,7 +32,8 @@ const Home = () => {
     };
 
     return (
-        <div className="min-h-screen bg-gray-100 p-4 flex flex-col items-center">
+        <div className="bg-black h-svh">
+            <BackgroundLines className="bg-black p-4 flex flex-col items-center">
             <div className="pt-25 px-5 md:p-25 md:w-5/6">
                 {chat.map((message, index) => (
                     <ChatBubble key={index} text={message.text} isUser={message.isUser} />
@@ -48,15 +50,15 @@ const Home = () => {
                                 />
                             </div>
                         </div>
-                        <div className="chat-header">MeowMed</div>
+                        <div className="chat-header text-white">MeowMed</div>
                         <div className="chat-bubble">Mikir dulu sebentar...</div>
                     </div>
                 )}
             </div>
-            <div className="w-full md:w-5/6 p-4 flex items-center  px-6">
+            <div className="w-full md:w-5/6 p-4 flex items-center px-6 z-10">
                 <div className="flex justify-center items-center w-full p-3 border border-gray-700 rounded-2xl resize-none focus:outline-none focus:ring-2 focus:ring-green-500">
                     {rules[currentStep].options && !isTyping && (
-                        <div className="space-x-6 flex w-3/4">
+                        <div className="space-x-6 flex md:w-3/4">
                             {rules[currentStep].options.map((option, index) => (
                                 <button
                                     key={index}
@@ -69,10 +71,11 @@ const Home = () => {
                         </div>
                     )}
                 </div>
-                <button className="ml-2 px-4 py-2 bg-green-500 text-white rounded-full shadow hover:bg-green-600">
+                <button className="ml-2 px-4 py-2 bg-green-500 text-white rounded-[1vw] shadow hover:bg-green-600">
                     Kirim
                 </button>
             </div>
+        </BackgroundLines>
         </div>
     );
 };
