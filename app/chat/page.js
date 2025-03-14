@@ -55,7 +55,7 @@ const Home = () => {
                     </div>
                 )}
             </div>
-            <div className="w-full md:w-5/6 p-4 flex items-center px-6 z-10">
+            <div className="w-full md:w-5/6 p-4 flex items-center md:px-6 z-10">
                 <div className="flex justify-center items-center w-full p-3 border border-gray-700 rounded-2xl resize-none focus:outline-none focus:ring-2 focus:ring-green-500">
                     {rules[currentStep].options && !isTyping && (
                         <div className="space-x-6 flex md:w-3/4">
@@ -71,9 +71,6 @@ const Home = () => {
                         </div>
                     )}
                 </div>
-                <button className="ml-2 px-4 py-2 bg-green-500 text-white rounded-[1vw] shadow hover:bg-green-600">
-                    Kirim
-                </button>
             </div>
         </BackgroundLines>
         </div>
