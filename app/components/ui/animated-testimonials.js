@@ -1,4 +1,4 @@
-"use client";;
+"use client";
 import { IconArrowLeft, IconArrowRight } from "@tabler/icons-react";
 import { motion, AnimatePresence } from "motion/react";
 import Image from "next/image";

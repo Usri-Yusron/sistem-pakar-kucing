@@ -28,7 +28,7 @@ const Home = () => {
             setChat(newChat);
             setCurrentStep(nextStep);
             setIsTyping(false);
-        }, 5000); // Durasi jeda sebelum sistem mulai mengetik (0.5 detik)
+        }, 5000);
     };
 
     return (

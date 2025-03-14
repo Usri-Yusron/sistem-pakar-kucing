@@ -1,10 +1,11 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { ArrowRight, CreditCard, LineChart, Lock, CheckCircle2 } from "lucide-react"
+
 import Team from "./components/Team"
 import Button from "./components/Button"
 import Footer from "./components/Footer"
+import { StickyScrollReveal } from "./components/StickyScrollReveal"
 
 export default function Home() {
 
@@ -144,7 +145,7 @@ export default function Home() {
               Solusi cerdas untuk menanyakan gejala penyakit pada kucing kesayangan.
             </p>
             <div className="flex justify-center space-x-4">
-              <Button child={"Let's Start"}/>
+              <Button child={"Let's Start"} />
             </div>
           </motion.div>
         </div>
@@ -152,46 +153,19 @@ export default function Home() {
 
       {/* Features Section */}
       <section id="team" className="relative z-10 border-t border-white/10 bg-black py-24">
-      <div className="text-center">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Our Team</h2>
-            <p className="mt-4 text-gray-400">Mereka yang telah bekerja di balik layar</p>
-          </div>
-      <Team />
+        <div className="text-center">
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Our Team</h2>
+          <p className="mt-4 text-gray-400">Mereka yang telah bekerja di balik layar</p>
+        </div>
+        <Team />
       </section>
-
-
 
       {/* CTA Section */}
-      <section id="tech-stack" className="relative z-10 border-t border-white/10 bg-black py-24">
-        <div className="container px-4">
-          <div className="mx-auto max-w-3xl rounded-2xl border border-white/10 bg-gradient-to-r from-cyan-950/50 to-violet-950/50 p-8 text-center backdrop-blur-sm md:p-12 lg:p-16">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">¿Listo para Comenzar?</h2>
-            <p className="mx-auto mt-4 max-w-xl text-gray-400">
-              Únete a miles de clientes satisfechos que confían en nosotros para sus necesidades bancarias.
-            </p>
-            <ul className="mx-auto mt-8 flex max-w-xl flex-col gap-4 text-left">
-              <li className="flex items-center space-x-3">
-                <CheckCircle2 className="h-5 w-5 text-cyan-400" />
-                <span>Sin comisiones ni cargos ocultos</span>
-              </li>
-              <li className="flex items-center space-x-3">
-                <CheckCircle2 className="h-5 w-5 text-cyan-400" />
-                <span>Soporte al cliente 24/7</span>
-              </li>
-              <li className="flex items-center space-x-3">
-                <CheckCircle2 className="h-5 w-5 text-cyan-400" />
-                <span>Plataforma segura y regulada</span>
-              </li>
-            </ul>
-            <Button className="mt-8 bg-gradient-to-r from-cyan-400 to-violet-500 text-lg text-black hover:from-cyan-500 hover:to-violet-600">
-              Abre tu Cuenta
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-          </div>
-        </div>
+      <section id="tech-stack" className="relative z-10 border-t border-white/10 bg-black py-15">
+        <StickyScrollReveal />
       </section>
 
-      {/* footer */}      
+      {/* footer */}
       <Footer />
       {/* footer selesai */}
     </div>
