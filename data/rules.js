@@ -28,10 +28,10 @@ export const rules = {
       ],
     },
     RESULT_STRESS: {
-      result: "Kuucing kamu mungkin mengalami stres. Cobalah menciptakan lingkungan yang lebih tenang untuknya.",
+      result: "Haasil diagnosanya adalah mungkin kucing kamu udah gak betah sebenarnya dipelihara sama kamu, Cuman karena dia kucing gak bisa ngomong jadi wehh dia ngeberontak.",
     },
     RESULT_HYPERTHYROIDISM: {
-      result: "Kuucing kamu mungkin mengalami hipertiroidisme. Sebaiknya konsultasikan ke dokter hewan.",
+      result: "Kuucing kamu mungkin mengalami hipertiroidisme, yaitu dimana kelenjar tiroid memproduksi hormon tiroid (terutama tiroksin atau T4) secara berlebihan. Sebaiknya konsultasikan ke dokter hewan.",
     },
     RESULT_UNKNOWN: {
       result: "Maau mati itu kucingnya, udah bosen hidup kucingnya.",
