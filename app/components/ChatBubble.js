@@ -31,7 +31,7 @@ const ChatBubble = ({ text, isUser }) => {
       transition={{ duration: 0.3 }}
       className={`flex ${isUser ? 'justify-end' : 'justify-start'} mb-2`}
     >
-        <div className="chat chat-start">
+        <div className={`chat ${isUser ? 'chat-end' : 'chat-start' }`}>
             <div className="chat-image avatar">
                 <div className="w-10 rounded-full">
                     <Image
@@ -42,7 +42,7 @@ const ChatBubble = ({ text, isUser }) => {
                     />
                 </div>
             </div>
-            <div className="chat-header text-white">MeowMed</div>
+            <div className="chat-header text-white">{`${isUser ? 'Saya' : 'Sisku'}`}</div>
             <div className="chat-bubble">{displayedText}</div>
         </div>
     </motion.div>
