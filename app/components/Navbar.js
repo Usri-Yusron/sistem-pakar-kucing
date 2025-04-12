@@ -13,7 +13,7 @@ export default function Navbar() {
             <div className="container flex h-16 items-center justify-around px-4 text-white">
                 <Link className="flex justify-center items-center space-x-2 font-bold" href="/">
                     <PawPrint className="h-6 w-6 text-cyan-400" />
-                    <span>Sispaku</span>
+                    <span>Meowlytic</span>
                 </Link>
                 <div className="flex items-center space-x-5 ">
                     {navigation.map((item) => (
