@@ -155,7 +155,7 @@ export default function Home() {
       <section id="team" className="relative z-10 border-t border-white/10 bg-black py-24">
         <div className="text-center">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Our Team</h2>
-          <p className="mt-4 text-gray-400">Mereka yang telah bekerja di balik layar</p>
+          {/* <p className="mt-4 text-gray-400">Mereka yang telah bekerja di balik layar</p> */}
         </div>
         <Team />
       </section>
