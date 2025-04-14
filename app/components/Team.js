@@ -37,7 +37,7 @@ export default function Team() {
             "The scalability and performance have been game-changing for our organization. Highly recommend to any growing business.",
           name: "Risha Marshela",
           designation: "Informatics Student at ITENAS",
-          src: "/profile/risha.jepg",
+          src: "/profile/risha.jpeg",
         },
       ];
       return <AnimatedTestimonials testimonials={testimonials} />;
