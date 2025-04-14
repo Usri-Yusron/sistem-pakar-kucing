@@ -151,7 +151,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Features Section */}
+      {/* Team Section */}
       <section id="team" className="relative z-10 border-t border-white/10 bg-black py-24">
         <div className="text-center">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Our Team</h2>
@@ -160,7 +160,7 @@ export default function Home() {
         <Team />
       </section>
 
-      {/* CTA Section */}
+      {/* Technology Section */}
       <section id="tech-stack" className="relative z-10 border-t border-white/10 bg-black py-15">
         <StickyScrollReveal />
       </section>
